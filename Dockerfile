@@ -1,7 +1,4 @@
-FROM alpine:latest
-
-RUN apk add nodejs
-RUN apk add npm
+FROM node:20.0.0-alpine3.17
 
 COPY ./ /var/chatgpt-api
 
